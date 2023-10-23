@@ -72,7 +72,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 88 824 104)
+	(rect 856 256 1032 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "S" (rect 90 0 97 12)(font "Arial" ))
 	(pt 0 8)
@@ -88,7 +88,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 128 824 144)
+	(rect 856 352 1032 368)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Cout" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
@@ -103,9 +103,41 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 360 232 424 280)
+	(rect 360 328 424 376)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "Co_AandB" (rect 3 37 54 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 728 240 792 288)
 	(text "XOR" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "AxorB" (rect 3 37 32 49)(font "Arial" ))
+	(text "Co_S_xor" (rect 3 37 51 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -137,41 +169,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 360 328 424 376)
-	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "AandB" (rect 3 37 34 49)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 14 32))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 42 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 12)(pt 30 12))
-		(line (pt 14 37)(pt 31 37))
-		(line (pt 14 12)(pt 14 37))
-		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
-	)
-)
-(symbol
 	(rect 728 336 792 384)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "Cout_or" (rect 3 37 41 49)(font "Arial" ))
+	(text "Co_Cout_or" (rect 3 37 62 49)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -202,9 +202,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 728 240 792 288)
+	(rect 360 232 424 280)
 	(text "XOR" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "S_xor" (rect 3 37 31 49)(font "Arial" ))
+	(text "Co_AxorB" (rect 3 37 52 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -238,7 +238,7 @@ applicable agreement for further details.
 (symbol
 	(rect 608 392 672 440)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "AxorB_and_Cin" (rect 3 37 78 49)(font "Arial" ))
+	(text "Co_AxB_e_Cin" (rect 3 37 77 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -312,6 +312,30 @@ applicable agreement for further details.
 	(pt 232 144)
 )
 (connector
+	(pt 696 368)
+	(pt 728 368)
+)
+(connector
+	(text "Cin" (rect 700 272 716 284)(font "Arial" ))
+	(pt 536 272)
+	(pt 728 272)
+)
+(connector
+	(text "AandB" (rect 688 336 719 348)(font "Arial" ))
+	(pt 424 352)
+	(pt 728 352)
+)
+(connector
+	(text "<<__$DEF_ALIAS26>>" (rect 802 344 914 356)(font "Arial" )(invisible))
+	(pt 856 360)
+	(pt 792 360)
+)
+(connector
+	(text "<<__$DEF_ALIAS28>>" (rect 800 248 912 260)(font "Arial" )(invisible))
+	(pt 856 264)
+	(pt 792 264)
+)
+(connector
 	(text "Cin" (rect 570 424 586 436)(font "Arial" ))
 	(pt 536 424)
 	(pt 608 424)
@@ -326,25 +350,21 @@ applicable agreement for further details.
 	(pt 496 408)
 )
 (connector
+	(pt 696 416)
 	(pt 672 416)
-	(pt 696 416)
 )
 (connector
 	(pt 696 368)
-	(pt 728 368)
-)
-(connector
 	(pt 696 416)
-	(pt 696 368)
-)
-(connector
-	(text "S" (rect 800 248 807 260)(font "Arial" ))
-	(pt 792 264)
-	(pt 840 264)
 )
 (connector
 	(pt 424 256)
 	(pt 496 256)
+)
+(connector
+	(text "AxorB" (rect 694 240 723 252)(font "Arial" ))
+	(pt 496 256)
+	(pt 728 256)
 )
 (connector
 	(pt 536 192)
@@ -353,26 +373,6 @@ applicable agreement for further details.
 (connector
 	(pt 536 272)
 	(pt 536 424)
-)
-(connector
-	(text "AxorB" (rect 694 240 723 252)(font "Arial" ))
-	(pt 496 256)
-	(pt 728 256)
-)
-(connector
-	(text "Cin" (rect 700 272 716 284)(font "Arial" ))
-	(pt 536 272)
-	(pt 728 272)
-)
-(connector
-	(text "AandB" (rect 688 336 719 348)(font "Arial" ))
-	(pt 424 352)
-	(pt 728 352)
-)
-(connector
-	(text "Cout" (rect 802 344 825 356)(font "Arial" ))
-	(pt 792 360)
-	(pt 840 360)
 )
 (junction (pt 168 248))
 (junction (pt 200 264))

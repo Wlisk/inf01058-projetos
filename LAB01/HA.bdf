@@ -55,7 +55,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 256 832 272)
+	(rect 600 256 776 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "S" (rect 90 0 97 12)(font "Arial" ))
 	(pt 0 8)
@@ -71,7 +71,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 656 328 832 344)
+	(rect 600 328 776 344)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Cout" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
@@ -120,7 +120,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 496 312 560 360)
+	(rect 488 312 552 360)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "and" (rect 3 37 20 49)(font "Arial" ))
 	(port
@@ -162,9 +162,14 @@ applicable agreement for further details.
 	(pt 488 272)
 )
 (connector
-	(text "A" (rect 480 312 488 324)(font "Arial" ))
+	(text "A" (rect 472 312 480 324)(font "Arial" ))
 	(pt 360 328)
-	(pt 496 328)
+	(pt 488 328)
+)
+(connector
+	(text "B" (rect 474 344 481 356)(font "Arial" ))
+	(pt 400 344)
+	(pt 488 344)
 )
 (connector
 	(pt 360 208)
@@ -175,11 +180,6 @@ applicable agreement for further details.
 	(pt 360 328)
 )
 (connector
-	(text "B" (rect 482 344 489 356)(font "Arial" ))
-	(pt 400 344)
-	(pt 496 344)
-)
-(connector
 	(pt 400 208)
 	(pt 400 272)
 )
@@ -188,14 +188,14 @@ applicable agreement for further details.
 	(pt 400 344)
 )
 (connector
-	(text "<<__$DEF_ALIAS585>>" (rect 573 320 691 332)(font "Arial" )(invisible))
-	(pt 560 336)
-	(pt 656 336)
+	(text "<<__$DEF_ALIAS587>>" (rect 527 248 645 260)(font "Arial" )(invisible))
+	(pt 552 264)
+	(pt 600 264)
 )
 (connector
-	(text "<<__$DEF_ALIAS587>>" (rect 583 248 701 260)(font "Arial" )(invisible))
-	(pt 552 264)
-	(pt 656 264)
+	(text "<<__$DEF_ALIAS585>>" (rect 509 320 627 332)(font "Arial" )(invisible))
+	(pt 552 336)
+	(pt 600 336)
 )
 (junction (pt 360 256))
 (junction (pt 400 272))
