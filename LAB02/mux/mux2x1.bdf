@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 160 96 328 112)
+	(rect 192 248 360 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A" (rect 5 0 14 12)(font "Arial" ))
+	(text "A" (rect 5 0 13 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 104 120 272 136)
+	(rect 192 288 360 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "B" (rect 5 0 13 12)(font "Arial" ))
+	(text "B" (rect 5 0 12 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,23 +53,24 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 72 144 240 160)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Sel" (rect 5 0 21 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 304 168 472 184)
+	(text "INPUT" (rect 15 0 43 10)(font "Arial" (font_size 6)))
+	(text "Sel" (rect 148 0 163 12)(font "Arial" ))
+	(pt 0 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 59 12))
+		(line (pt 84 4)(pt 59 4))
+		(line (pt 55 8)(pt 0 8))
 		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 59 4)(pt 55 8))
+		(line (pt 59 12)(pt 55 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(flipy)
+	(text "VCC" (rect 20 7 40 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
-	(rect 512 152 688 168)
+	(rect 592 272 768 288)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "S" (rect 90 0 97 12)(font "Arial" ))
 	(pt 0 8)
@@ -86,7 +87,7 @@ applicable agreement for further details.
 (symbol
 	(rect 384 224 448 272)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst" (rect 3 37 20 49)(font "Arial" ))
+	(text "Co_Aand_nSel" (rect 3 37 74 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -118,7 +119,7 @@ applicable agreement for further details.
 (symbol
 	(rect 384 280 448 328)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst1" (rect 3 37 26 49)(font "Arial" ))
+	(text "Co_BandSel" (rect 3 37 63 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -150,7 +151,7 @@ applicable agreement for further details.
 (symbol
 	(rect 496 256 560 304)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst2" (rect 3 37 26 49)(font "Arial" ))
+	(text "Co_or_mux" (rect 3 37 59 49)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -181,9 +182,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 296 224 344 256)
+	(rect 192 192 240 224)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst3" (rect 3 21 26 33)(font "Arial" ))
+	(text "Co_nSel" (rect 3 21 44 33)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -204,11 +205,6 @@ applicable agreement for further details.
 		(line (pt 13 25)(pt 31 16))
 		(circle (rect 31 12 39 20))
 	)
-)
-(connector
-	(text "S" (rect 568 264 575 276)(font "Arial" ))
-	(pt 560 280)
-	(pt 608 280)
 )
 (connector
 	(pt 448 248)
@@ -235,47 +231,47 @@ applicable agreement for further details.
 	(pt 472 272)
 )
 (connector
-	(pt 384 240)
-	(pt 344 240)
-)
-(connector
-	(pt 240 152)
-	(pt 248 152)
-)
-(connector
-	(pt 296 240)
-	(pt 248 240)
-)
-(connector
-	(pt 248 312)
-	(pt 384 312)
-)
-(connector
-	(pt 248 152)
-	(pt 248 240)
-)
-(connector
-	(pt 248 240)
-	(pt 248 312)
-)
-(connector
-	(pt 328 104)
-	(pt 360 104)
-)
-(connector
-	(pt 360 104)
-	(pt 360 256)
-)
-(connector
-	(pt 384 256)
-	(pt 360 256)
-)
-(connector
-	(pt 272 128)
-	(pt 272 296)
+	(pt 560 280)
+	(pt 592 280)
 )
 (connector
 	(pt 384 296)
-	(pt 272 296)
+	(pt 360 296)
 )
-(junction (pt 248 240))
+(connector
+	(pt 384 312)
+	(pt 168 312)
+)
+(connector
+	(pt 360 256)
+	(pt 384 256)
+)
+(connector
+	(pt 168 208)
+	(pt 192 208)
+)
+(connector
+	(pt 248 208)
+	(pt 248 240)
+)
+(connector
+	(pt 240 208)
+	(pt 248 208)
+)
+(connector
+	(pt 248 240)
+	(pt 384 240)
+)
+(connector
+	(pt 168 176)
+	(pt 304 176)
+)
+(connector
+	(pt 168 176)
+	(pt 168 208)
+)
+(connector
+	(pt 168 208)
+	(pt 168 312)
+)
+(junction (pt 168 208))

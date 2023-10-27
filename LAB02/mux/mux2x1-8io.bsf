@@ -33,16 +33,16 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "B[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "B[7..0]" (rect 21 43 57 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "Sel" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "Sel" (rect 21 43 38 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "Sel" (rect 0 0 17 14)(font "Arial" (font_size 8)))
-		(text "Sel" (rect 21 59 38 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
+		(text "B[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "B[7..0]" (rect 21 59 57 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 128 32)

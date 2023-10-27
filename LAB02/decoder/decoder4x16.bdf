@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 160 8 328 24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "E[3..0]" (rect 5 0 39 12)(font "Arial" ))
+	(text "E[3..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1058,26 +1058,6 @@ applicable agreement for further details.
 	(pt 344 176)
 )
 (connector
-	(text "f_A" (rect 472 0 484 18)(font "Arial" )(vertical))
-	(pt 488 16)
-	(pt 488 32)
-)
-(connector
-	(text "f_B" (rect 472 49 484 66)(font "Arial" )(vertical))
-	(pt 488 64)
-	(pt 488 80)
-)
-(connector
-	(text "f_C" (rect 680 0 692 18)(font "Arial" )(vertical))
-	(pt 696 16)
-	(pt 696 32)
-)
-(connector
-	(text "f_D" (rect 680 48 692 66)(font "Arial" )(vertical))
-	(pt 696 64)
-	(pt 696 80)
-)
-(connector
 	(pt 200 232)
 	(pt 160 232)
 )
@@ -1147,11 +1127,6 @@ applicable agreement for further details.
 	(pt 360 328)
 )
 (connector
-	(text "f_B" (rect 332 184 349 196)(font "Arial" ))
-	(pt 360 200)
-	(pt 328 200)
-)
-(connector
 	(pt 200 248)
 	(pt 136 248)
 )
@@ -1173,11 +1148,6 @@ applicable agreement for further details.
 	(pt 136 536)
 )
 (connector
-	(text "f_C" (rect 120 504 132 522)(font "Arial" )(vertical))
-	(pt 136 536)
-	(pt 136 440)
-)
-(connector
 	(pt 392 248)
 	(pt 336 248)
 )
@@ -1192,11 +1162,6 @@ applicable agreement for further details.
 (connector
 	(pt 392 536)
 	(pt 336 536)
-)
-(connector
-	(text "f_C" (rect 320 504 332 522)(font "Arial" )(vertical))
-	(pt 336 536)
-	(pt 336 440)
 )
 (connector
 	(text "f_notC" (rect 320 299 332 333)(font "Arial" )(vertical))
@@ -1276,34 +1241,9 @@ applicable agreement for further details.
 	(pt 872 240)
 )
 (connector
-	(text "f_A" (rect 548 160 566 172)(font "Arial" ))
-	(pt 576 176)
-	(pt 544 176)
-)
-(connector
-	(text "f_A" (rect 745 160 763 172)(font "Arial" ))
-	(pt 768 176)
-	(pt 736 176)
-)
-(connector
-	(text "f_B" (rect 726 184 743 196)(font "Arial" ))
-	(pt 752 200)
-	(pt 720 200)
-)
-(connector
 	(text "f_notB" (rect 525 184 558 196)(font "Arial" ))
 	(pt 552 200)
 	(pt 520 200)
-)
-(connector
-	(text "f_C" (rect 512 504 524 522)(font "Arial" )(vertical))
-	(pt 528 536)
-	(pt 528 440)
-)
-(connector
-	(text "f_C" (rect 712 504 724 522)(font "Arial" )(vertical))
-	(pt 728 536)
-	(pt 728 440)
 )
 (connector
 	(text "f_notC" (rect 512 299 524 333)(font "Arial" )(vertical))
@@ -1593,9 +1533,69 @@ applicable agreement for further details.
 	(pt 496 608)
 )
 (connector
-	(text "f_D" (rect 142 608 160 620)(font "Arial" ))
+	(text "E[0]" (rect 548 160 568 172)(font "Arial" ))
+	(pt 576 176)
+	(pt 544 176)
+)
+(connector
+	(text "E[0]" (rect 745 160 765 172)(font "Arial" ))
+	(pt 768 176)
+	(pt 736 176)
+)
+(connector
+	(text "E[1]" (rect 332 184 352 196)(font "Arial" ))
+	(pt 360 200)
+	(pt 328 200)
+)
+(connector
+	(text "E[1]" (rect 726 184 746 196)(font "Arial" ))
+	(pt 752 200)
+	(pt 720 200)
+)
+(connector
+	(text "E[2]" (rect 120 504 132 524)(font "Arial" )(vertical))
+	(pt 136 536)
+	(pt 136 440)
+)
+(connector
+	(text "E[2]" (rect 320 504 332 524)(font "Arial" )(vertical))
+	(pt 336 536)
+	(pt 336 440)
+)
+(connector
+	(text "E[2]" (rect 512 504 524 524)(font "Arial" )(vertical))
+	(pt 528 536)
+	(pt 528 440)
+)
+(connector
+	(text "E[2]" (rect 712 504 724 524)(font "Arial" )(vertical))
+	(pt 728 536)
+	(pt 728 440)
+)
+(connector
+	(text "E[3]" (rect 142 608 162 620)(font "Arial" ))
 	(pt 104 608)
 	(pt 304 608)
+)
+(connector
+	(text "<<__$DEF_ALIAS254>>" (rect 470 47 482 165)(font "Arial" )(vertical)(invisible))
+	(pt 488 64)
+	(pt 488 80)
+)
+(connector
+	(text "<<__$DEF_ALIAS256>>" (rect 472 0 484 118)(font "Arial" )(vertical)(invisible))
+	(pt 488 16)
+	(pt 488 32)
+)
+(connector
+	(text "<<__$DEF_ALIAS258>>" (rect 680 0 692 118)(font "Arial" )(vertical)(invisible))
+	(pt 696 16)
+	(pt 696 32)
+)
+(connector
+	(text "<<__$DEF_ALIAS260>>" (rect 680 48 692 166)(font "Arial" )(vertical)(invisible))
+	(pt 696 64)
+	(pt 696 80)
 )
 (junction (pt 184 216))
 (junction (pt 184 312))
