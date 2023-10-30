@@ -1,0 +1,9 @@
+# DECODER 4X16
+
+## Consumo Area FPGA
+- Pinos: 20
+- Logic Elements (Combinacionais): 16
+
+## Atraso Crítico
+INPUT E[0] -> OUTPUT S[0]
+FR (Fall-Rise): 10.51

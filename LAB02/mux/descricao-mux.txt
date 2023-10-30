@@ -1,0 +1,9 @@
+# MUX 2X1 8bits
+
+## Consumo Area FPGA
+- Pinos: 25
+- Logic Elements (Combinacionais): 8
+
+## Atraso Crítico
+INPUT Sel -> OUTPUT S[3]
+FR (Fall-Rise): 10.124
