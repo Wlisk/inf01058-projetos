@@ -1,0 +1,21 @@
+# ULA 4IO, 4 opcodes
+
+## Consumo Area FPGA
+- Pinos: 17
+    # INPUT
+	- A: 4
+	- B: 4
+	- opcode: 2
+    # OUTPUT
+	- S: 4
+	- flag Z: 1
+	- flag N: 1
+	- flag C: 1
+
+- Logic Elements (Combinacionais): 14
+
+## Atraso Crítico
+RR (Rise-Rise):  9.748 - A[1] to flag_Z
+RF (Fall-Rise):  9.823 - A[1] to flag_Z
+FR (Fall-Rise): 10.223 - A[0] to flag_Z
+FF (Fall-Fall): 10.368 - A[0] to flag_Z
