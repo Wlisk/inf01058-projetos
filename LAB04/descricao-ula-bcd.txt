@@ -1,0 +1,25 @@
+# ULA 4IO, 4 opcodes com saída BCD
+
+## Consumo Area FPGA
+- Pinos: 20
+    # INPUT
+	- A: 4
+	- B: 4
+	- opcode: 2
+    # OUTPUT
+	- bcd: 7
+	- flag Z: 1
+	- flag N: 1
+	- flag C: 1
+
+- Logic Elements (Combinacionais): 21
+    #LUTs: 
+	- 4 inputs: 17
+	- 3 inputs: 2
+	- <3 inputs: 2
+
+## Atraso Crítico: 10.940 max
+RR (Rise-Rise): 10.442 - A[1] to BCD_F
+RF (Fall-Rise): 10.410 - A[1] to BCD_F
+FR (Fall-Rise): 10.940 - A[1] to BCD_F
+FF (Fall-Fall): 10.893 - A[1] to BCD_C
