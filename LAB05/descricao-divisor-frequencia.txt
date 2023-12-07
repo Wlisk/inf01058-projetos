@@ -1,0 +1,26 @@
+# Divisor de frequncia, in 50MHz -> out 1.98Hz
+divide frequencia de entrada em 24 vezes
+
+## Consumo Area FPGA
+- Pinos: 3
+    # INPUT: clk, rst
+    # OUTPUT: out
+
+- Logic Elements: 47
+    # Combinacionais: 23
+    # registradores: 23
+    # Combinacional com registrador: 1
+    # LUTs: 
+	- <3 inputs: 24
+	- register: 23
+
+## Atraso Clock
+- design-wide TNS: 
+    # setup: -0.108 
+    # hold: -0.339
+    # minimum pulse width: -27.039
+
+- worst-case slack:
+    # setup: -0.104
+    # hold: -0.129
+    # minimum pulse width: -3.000
