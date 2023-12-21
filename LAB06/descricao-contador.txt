@@ -1,0 +1,29 @@
+# Circuito de 8bits de entrada para carragemento, manter dados e contador UP/DOWN
+com saída para 2 displays de 7-segmentos
+
+## Consumo Area FPGA
+- Pinos: 26
+    # INPUT: rst, sel[2], D[8]
+    # OUTPUT: BCD0[7], BCD1[7]
+    # CLOCK: clk
+
+- Logic Elements: 88
+    # Combinacionais: 55
+    # registradores: 25
+    # combinacional com registrador: 8
+    # LUTs: 
+	- 4 inputs: 33
+	- 3 inputs: 5
+	- <3 inputs: 25
+	- registradores: 25
+
+## Atraso Clock
+- design-wide TNS: 
+    # setup: -8.238 
+    # hold: -1.043
+    # minimum pulse width: -36.0
+
+- worst-case slack:
+    # setup: -1.331
+    # hold: -0.246
+    # minimum pulse width: -3.000

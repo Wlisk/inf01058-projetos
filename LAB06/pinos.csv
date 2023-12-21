@@ -1,0 +1,47 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# File: C:\Users\aluno\Downloads\LAB06\pinos.csv
+# Generated on: Thu Dec 21 11:44:59 2023
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+clk,Input,PIN_G21,6,B6_N1,PIN_G21,,,,,
+D[7],Input,PIN_E3,1,B1_N0,PIN_E3,,,,,
+D[6],Input,PIN_H7,1,B1_N0,PIN_H7,,,,,
+D[5],Input,PIN_J7,1,B1_N1,PIN_J7,,,,,
+D[4],Input,PIN_G5,1,B1_N0,PIN_G5,,,,,
+D[3],Input,PIN_G4,1,B1_N0,PIN_G4,,,,,
+D[2],Input,PIN_H6,1,B1_N0,PIN_H6,,,,,
+D[1],Input,PIN_H5,1,B1_N0,PIN_H5,,,,,
+D[0],Input,PIN_J6,1,B1_N0,PIN_J6,,,,,
+rst,Input,PIN_H2,1,B1_N1,PIN_H2,,,,,
+seg1_a,Output,PIN_A13,7,B7_N1,PIN_A13,,,,,
+seg1_b,Output,PIN_B13,7,B7_N1,PIN_B13,,,,,
+seg1_c,Output,PIN_C13,7,B7_N1,PIN_C13,,,,,
+seg1_d,Output,PIN_A14,7,B7_N1,PIN_A14,,,,,
+seg1_e,Output,PIN_B14,7,B7_N1,PIN_B14,,,,,
+seg1_f,Output,PIN_E14,7,B7_N1,PIN_E14,,,,,
+seg1_g,Output,PIN_A15,7,B7_N1,PIN_A15,,,,,
+seg2_a,Output,PIN_E11,7,B7_N1,PIN_E11,,,,,
+seg2_b,Output,PIN_F11,7,B7_N1,PIN_F11,,,,,
+seg2_c,Output,PIN_H12,7,B7_N1,PIN_H12,,,,,
+seg2_d,Output,PIN_H13,7,B7_N1,PIN_H13,,,,,
+seg2_e,Output,PIN_G12,7,B7_N1,PIN_G12,,,,,
+seg2_f,Output,PIN_F12,7,B7_N1,PIN_F12,,,,,
+seg2_g,Output,PIN_F13,7,B7_N1,PIN_F13,,,,,
+sel[1],Input,PIN_D2,1,B1_N0,PIN_D2,,,,,
+sel[0],Input,PIN_E4,1,B1_N0,PIN_E4,,,,,
