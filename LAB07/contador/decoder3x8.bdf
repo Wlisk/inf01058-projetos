@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 528 136 696 152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in[2..0]" (rect 5 0 39 12)(font "Arial" ))
+	(text "in[2..0]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -459,6 +459,51 @@ applicable agreement for further details.
 	(pt 384 128)
 )
 (connector
+	(text "out[0]" (rect 647 240 675 252)(font "Arial" ))
+	(pt 632 256)
+	(pt 672 256)
+)
+(connector
+	(text "out[1]" (rect 650 288 678 300)(font "Arial" ))
+	(pt 632 304)
+	(pt 672 304)
+)
+(connector
+	(text "out[2]" (rect 651 336 679 348)(font "Arial" ))
+	(pt 632 352)
+	(pt 672 352)
+)
+(connector
+	(text "out[3]" (rect 649 384 677 396)(font "Arial" ))
+	(pt 632 400)
+	(pt 672 400)
+)
+(connector
+	(text "out[4]" (rect 649 432 677 444)(font "Arial" ))
+	(pt 632 448)
+	(pt 672 448)
+)
+(connector
+	(text "out[5]" (rect 650 480 678 492)(font "Arial" ))
+	(pt 632 496)
+	(pt 672 496)
+)
+(connector
+	(text "out[6]" (rect 648 528 676 540)(font "Arial" ))
+	(pt 632 544)
+	(pt 672 544)
+)
+(connector
+	(text "out[7]" (rect 650 576 678 588)(font "Arial" ))
+	(pt 632 592)
+	(pt 672 592)
+)
+(connector
+	(text "in[2]" (rect 268 112 289 124)(font "Arial" ))
+	(pt 264 128)
+	(pt 288 128)
+)
+(connector
 	(pt 288 128)
 	(pt 312 128)
 )
@@ -595,6 +640,11 @@ applicable agreement for further details.
 	(pt 360 400)
 )
 (connector
+	(text "in[0]" (rect 413 112 434 124)(font "Arial" ))
+	(pt 408 128)
+	(pt 432 128)
+)
+(connector
 	(pt 432 128)
 	(pt 456 128)
 )
@@ -661,56 +711,6 @@ applicable agreement for further details.
 (connector
 	(pt 432 504)
 	(pt 432 600)
-)
-(connector
-	(text "in[2]" (rect 268 112 289 124)(font "Arial" ))
-	(pt 264 128)
-	(pt 288 128)
-)
-(connector
-	(text "in[0]" (rect 413 112 434 124)(font "Arial" ))
-	(pt 408 128)
-	(pt 432 128)
-)
-(connector
-	(text "out[7]" (rect 647 240 675 252)(font "Arial" ))
-	(pt 632 256)
-	(pt 672 256)
-)
-(connector
-	(text "out[6]" (rect 650 288 678 300)(font "Arial" ))
-	(pt 632 304)
-	(pt 672 304)
-)
-(connector
-	(text "out[5]" (rect 651 336 679 348)(font "Arial" ))
-	(pt 632 352)
-	(pt 672 352)
-)
-(connector
-	(text "out[4]" (rect 649 384 677 396)(font "Arial" ))
-	(pt 632 400)
-	(pt 672 400)
-)
-(connector
-	(text "out[3]" (rect 649 432 677 444)(font "Arial" ))
-	(pt 632 448)
-	(pt 672 448)
-)
-(connector
-	(text "out[2]" (rect 650 480 678 492)(font "Arial" ))
-	(pt 632 496)
-	(pt 672 496)
-)
-(connector
-	(text "out[1]" (rect 648 528 676 540)(font "Arial" ))
-	(pt 632 544)
-	(pt 672 544)
-)
-(connector
-	(text "out[0]" (rect 650 576 678 588)(font "Arial" ))
-	(pt 632 592)
-	(pt 672 592)
 )
 (junction (pt 288 128))
 (junction (pt 360 128))

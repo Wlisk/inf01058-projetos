@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 248 280 416 296)
+	(rect 416 280 584 296)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 19 12)(font "Arial" ))
+	(text "HLT" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 160 296 328 312)
+	(rect 416 296 584 312)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "goto_t0" (rect 5 0 41 12)(font "Arial" ))
+	(text "clk" (rect 5 0 20 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 184 256 352 272)
+	(rect 416 312 584 328)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "HLT" (rect 5 0 25 12)(font "Arial" ))
+	(text "rst" (rect 5 0 18 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,9 +69,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 744 264 920 280)
+	(rect 720 280 896 296)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "t[0..7]" (rect 90 0 119 12)(font "Arial" ))
+	(text "counter[2..0]" (rect 90 0 152 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -84,31 +84,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 584 240 720 336)
-	(text "decoder3x8" (rect 5 0 73 14)(font "Arial" (font_size 8)))
-	(text "decoder_temporizador" (rect 8 80 115 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "in[2..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "in[2..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 136 32)
-		(output)
-		(text "out[7..0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
-		(text "out[7..0]" (rect 69 27 115 41)(font "Arial" (font_size 8)))
-		(line (pt 136 32)(pt 120 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 120 80))
-	)
-)
-(symbol
-	(rect 440 240 560 336)
+	(rect 584 256 704 352)
 	(text "synccounter" (rect 5 0 76 14)(font "Arial" (font_size 8)))
-	(text "Co_contador" (rect 8 80 70 92)(font "Arial" ))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -141,111 +119,8 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 104 80))
 	)
 )
-(symbol
-	(rect 368 240 416 272)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "not_hlt" (rect 3 21 36 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
-	(rect 360 296 408 328)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "not_rst" (rect 3 21 37 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
 (connector
-	(pt 560 272)
-	(pt 584 272)
+	(pt 704 288)
+	(pt 720 288)
 	(bus)
-)
-(connector
-	(pt 720 272)
-	(pt 744 272)
-	(bus)
-)
-(connector
-	(pt 440 288)
-	(pt 416 288)
-)
-(connector
-	(pt 440 272)
-	(pt 424 272)
-)
-(connector
-	(pt 424 272)
-	(pt 424 256)
-)
-(connector
-	(pt 416 256)
-	(pt 424 256)
-)
-(connector
-	(pt 368 256)
-	(pt 352 256)
-)
-(connector
-	(pt 352 256)
-	(pt 352 264)
-)
-(connector
-	(pt 328 304)
-	(pt 344 304)
-)
-(connector
-	(pt 344 304)
-	(pt 344 312)
-)
-(connector
-	(pt 360 312)
-	(pt 344 312)
-)
-(connector
-	(pt 440 304)
-	(pt 424 304)
-)
-(connector
-	(pt 408 312)
-	(pt 424 312)
-)
-(connector
-	(pt 424 304)
-	(pt 424 312)
 )

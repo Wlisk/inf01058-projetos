@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("opcode")
+SIGNAL("op")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -42,44 +42,44 @@ SIGNAL("opcode")
 	PARENT = "";
 }
 
-SIGNAL("opcode[3]")
+SIGNAL("op[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "opcode";
+	PARENT = "op";
 }
 
-SIGNAL("opcode[2]")
+SIGNAL("op[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "opcode";
+	PARENT = "op";
 }
 
-SIGNAL("opcode[1]")
+SIGNAL("op[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "opcode";
+	PARENT = "op";
 }
 
-SIGNAL("opcode[0]")
+SIGNAL("op[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "opcode";
+	PARENT = "op";
 }
 
 SIGNAL("NOP")
@@ -192,60 +192,61 @@ SIGNAL("HLT")
 	PARENT = "";
 }
 
-TRANSITION_LIST("opcode[3]")
+TRANSITION_LIST("op[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 1;
-			LEVEL 0 FOR 400.0;
-			LEVEL 1 FOR 400.0;
+			REPEAT = 3;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
 		}
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 40.0;
 	}
 }
 
-TRANSITION_LIST("opcode[2]")
+TRANSITION_LIST("op[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 2;
-			LEVEL 0 FOR 200.0;
-			LEVEL 1 FOR 200.0;
+			REPEAT = 6;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
 		}
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 40.0;
 	}
 }
 
-TRANSITION_LIST("opcode[1]")
+TRANSITION_LIST("op[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 5;
-			LEVEL 0 FOR 100.0;
-			LEVEL 1 FOR 100.0;
+			REPEAT = 12;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
 		}
+		LEVEL 0 FOR 40.0;
 	}
 }
 
-TRANSITION_LIST("opcode[0]")
+TRANSITION_LIST("op[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 10;
-			LEVEL 0 FOR 50.0;
-			LEVEL 1 FOR 50.0;
+			REPEAT = 25;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
 		}
 	}
 }
@@ -351,7 +352,7 @@ TRANSITION_LIST("HLT")
 
 DISPLAY_LINE
 {
-	CHANNEL = "opcode";
+	CHANNEL = "op";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -361,7 +362,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "opcode[3]";
+	CHANNEL = "op[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -371,7 +372,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "opcode[2]";
+	CHANNEL = "op[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -381,7 +382,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "opcode[1]";
+	CHANNEL = "op[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -391,7 +392,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "opcode[0]";
+	CHANNEL = "op[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
