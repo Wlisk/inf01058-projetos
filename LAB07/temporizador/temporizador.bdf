@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(output)
 	(rect 744 264 920 280)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "t[0..7]" (rect 90 0 119 12)(font "Arial" ))
+	(text "t[7..0]" (rect 90 0 119 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
