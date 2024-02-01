@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 136 32)
 		(output)
-		(text "out[3..0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
-		(text "out[3..0]" (rect 69 27 115 41)(font "Arial" (font_size 8)))
+		(text "out[4..0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "out[4..0]" (rect 69 27 115 41)(font "Arial" (font_size 8)))
 		(line (pt 136 32)(pt 120 32)(line_width 3))
 	)
 	(drawing

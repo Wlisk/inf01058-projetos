@@ -1,0 +1,62 @@
+# FSM para controle de semáforo
+Máquina de estados para controle do sinal de semáforo trifásico (verde, amarelo, vermelho) baseado no tempo (8 ciclos para verde, 2 ciclos para amarelo, 8 ciclos para vermelho).
+
+Dados informados sem contar com o divisor de frequência.
+
+## Consumo Area FPGA
+- Pinos: 5 (+9 debug)
+    # INPUT: clk, rst_registers
+    # OUTPUT: saida_verde, saida_amarelo, saida_vermelho
+    # DEBUG OUTPUT: counter[4..0], E_atual[1..0], E_prox[1..0]
+
+- Logic Elements: 15
+    # Combinacionais: 8
+    # registradores: 1
+    # Combinacional com registrador: 6
+    # LUTs: 
+	- 4 inputs: 6
+	- 3 inputs: 1
+	- <3 inputs: 7
+	- register: 1
+
+- Total Registers: 7
+- Clock Pins: 1
+
+## Atraso Clock
+- design-wide TNS: 
+    # setup: -2.762 
+    # hold: 0.000
+    # minimum pulse width: -10.392
+
+- worst-case slack:
+    # setup: -0.871
+    # hold: -0.187
+    # minimum pulse width: -3.000
+
+-----------------------------------------------------------------------
+
+Dados informados contando com o divisor de frequência.
+
+- Logic Elements: 66
+    # Combinacionais: 34
+    # registradores: 27
+    # Combinacional com registrador: 5
+    # LUTs: 
+	- 4 inputs: 6
+	- 3 inputs: 1
+	- <3 inputs: 32
+	- register: 27
+
+- Total Registers: 32
+- Clock Pins: 1
+
+## Atraso Clock
+- design-wide TNS: 
+    # setup: -2.933 
+    # hold: -0.685
+    # minimum pulse width: -35.104
+
+- worst-case slack:
+    # setup: -0.723
+    # hold: -0.111
+    # minimum pulse width: -3.000

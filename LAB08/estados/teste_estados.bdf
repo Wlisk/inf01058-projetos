@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 312 264 480 280)
+	(rect 328 160 496 176)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "S1" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 312 280 480 296)
+	(rect 328 176 496 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "S0" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 312 296 480 312)
+	(rect 328 192 496 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "bit[4..0]" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 776 264 952 280)
+	(rect 792 160 968 176)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "pS1" (rect 90 0 108 12)(font "Arial" ))
 	(pt 0 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 776 360 952 376)
+	(rect 792 256 968 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "pS0" (rect 90 0 108 12)(font "Arial" ))
 	(pt 0 8)
@@ -100,7 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 648 240 768 336)
+	(rect 664 136 784 232)
 	(text "prox_s1" (rect 5 0 52 14)(font "Arial" (font_size 8)))
 	(text "Co_pS1" (rect 8 80 46 92)(font "Arial" ))
 	(port
@@ -136,7 +136,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 648 336 768 432)
+	(rect 664 232 784 328)
 	(text "prox_s0" (rect 5 0 52 14)(font "Arial" (font_size 8)))
 	(text "Co_pS2" (rect 8 80 46 92)(font "Arial" ))
 	(port
@@ -171,66 +171,118 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 104 80))
 	)
 )
-(connector
-	(pt 648 288)
-	(pt 568 288)
+(symbol
+	(rect 656 136 776 232)
+	(text "prox_s1" (rect 5 0 52 14)(font "Arial" (font_size 8)))
+	(text "Co_pS3" (rect 8 80 46 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "S1" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S1" (rect 21 27 36 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "S0" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S0" (rect 21 43 36 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "bit[4..0]" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "bit[4..0]" (rect 21 59 62 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "pS1" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "pS1" (rect 77 27 99 41)(font "Arial" (font_size 8)))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 80))
+	)
 )
 (connector
-	(pt 568 288)
-	(pt 480 288)
+	(pt 784 168)
+	(pt 792 168)
 )
 (connector
-	(pt 768 272)
-	(pt 776 272)
+	(pt 784 264)
+	(pt 792 264)
 )
 (connector
-	(pt 768 368)
-	(pt 776 368)
+	(pt 664 264)
+	(pt 608 264)
 )
 (connector
-	(pt 648 368)
-	(pt 592 368)
+	(pt 608 264)
+	(pt 608 168)
 )
 (connector
-	(pt 592 368)
-	(pt 592 272)
+	(pt 664 280)
+	(pt 584 280)
 )
 (connector
-	(pt 648 272)
-	(pt 592 272)
+	(pt 584 184)
+	(pt 584 280)
 )
 (connector
-	(pt 592 272)
-	(pt 480 272)
-)
-(connector
-	(pt 648 384)
-	(pt 568 384)
-)
-(connector
-	(pt 568 288)
-	(pt 568 384)
-)
-(connector
-	(pt 648 400)
-	(pt 544 400)
+	(pt 664 296)
+	(pt 560 296)
 	(bus)
 )
 (connector
-	(pt 544 400)
-	(pt 544 304)
+	(pt 560 296)
+	(pt 560 200)
 	(bus)
 )
 (connector
-	(pt 648 304)
-	(pt 544 304)
+	(pt 496 168)
+	(pt 608 168)
+)
+(connector
+	(pt 608 168)
+	(pt 656 168)
+)
+(connector
+	(pt 656 168)
+	(pt 664 168)
+)
+(connector
+	(pt 496 184)
+	(pt 584 184)
+)
+(connector
+	(pt 584 184)
+	(pt 656 184)
+)
+(connector
+	(pt 656 184)
+	(pt 664 184)
+)
+(connector
+	(pt 496 200)
+	(pt 560 200)
 	(bus)
 )
 (connector
-	(pt 544 304)
-	(pt 480 304)
+	(pt 560 200)
+	(pt 656 200)
 	(bus)
 )
-(junction (pt 568 288))
-(junction (pt 592 272))
-(junction (pt 544 304))
+(connector
+	(pt 656 200)
+	(pt 664 200)
+	(bus)
+)
+(junction (pt 608 168))
+(junction (pt 584 184))
+(junction (pt 560 200))
+(junction (pt 656 168))
+(junction (pt 656 184))
+(junction (pt 656 200))

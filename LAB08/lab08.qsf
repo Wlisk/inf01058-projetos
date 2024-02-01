@@ -56,6 +56,7 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "X:/Projects/inf01058-projeto/LAB08/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name BDF_FILE registrador/register2bit.bdf
 set_global_assignment -name BDF_FILE divisor/fdiv25.bdf
 set_global_assignment -name BDF_FILE divisor/fdiv5.bdf
 set_global_assignment -name BDF_FILE divisor/fdiv.bdf
@@ -67,7 +68,6 @@ set_global_assignment -name BDF_FILE registrador/mux2x1.bdf
 set_global_assignment -name BDF_FILE registrador/register1bit.bdf
 set_global_assignment -name BDF_FILE registrador/ffd.bdf
 set_global_assignment -name BDF_FILE lab08.bdf
-set_global_assignment -name BDF_FILE registrador/register3bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE registrador/test_registrador.vwf
 set_global_assignment -name BDF_FILE saidas/saida_verde.bdf
 set_global_assignment -name BDF_FILE saidas/saida_amarelo.bdf
@@ -75,7 +75,6 @@ set_global_assignment -name BDF_FILE saidas/saida_vermelho.bdf
 set_global_assignment -name BDF_FILE saidas/saida_reset.bdf
 set_global_assignment -name BDF_FILE saidas/controle_saida.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE saidas/teste_saidas.vwf
-set_global_assignment -name BDF_FILE estados/prox_s2.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE estados/teste_estados.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/lab08.sim.vwf
 set_global_assignment -name BDF_FILE estados/prox_s1.bdf
@@ -84,4 +83,6 @@ set_global_assignment -name BDF_FILE estados/controle_estados.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE estados/compare.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE contador/teste_contador.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE teste_semaforo.vwf
+set_global_assignment -name BDF_FILE estados/controle_bits.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
