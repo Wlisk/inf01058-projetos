@@ -1,62 +1,62 @@
 # FSM para controle de semáforo
 Máquina de estados para controle do sinal de semáforo trifásico (verde, amarelo, vermelho) baseado no tempo (8 ciclos para verde, 2 ciclos para amarelo, 8 ciclos para vermelho).
 
-Dados informados sem contar com o divisor de frequência.
+Dados informados sem contar com o divisor de frequência e bcd.
 
 ## Consumo Area FPGA
-- Pinos: 5 (+9 debug)
+- Pinos: 5 (+14 debug)
     # INPUT: clk, rst_registers
     # OUTPUT: saida_verde, saida_amarelo, saida_vermelho
-    # DEBUG OUTPUT: counter[4..0], E_atual[1..0], E_prox[1..0]
+    # DEBUG OUTPUT: hex3(A,B,C,D,E,F,G), hex2(A,B,C,D,E,F,G)
 
-- Logic Elements: 15
-    # Combinacionais: 8
+- Logic Elements: 12
+    # Combinacionais: 5
     # registradores: 1
-    # Combinacional com registrador: 6
+    # Combinacional com registrador: 7
     # LUTs: 
-	- 4 inputs: 6
+	- 4 inputs: 4
 	- 3 inputs: 1
 	- <3 inputs: 7
-	- register: 1
 
 - Total Registers: 7
 - Clock Pins: 1
 
 ## Atraso Clock
 - design-wide TNS: 
-    # setup: -2.762 
+    # setup: -1.15 
     # hold: 0.000
     # minimum pulse width: -10.392
 
 - worst-case slack:
-    # setup: -0.871
-    # hold: -0.187
+    # setup: -0.342
+    # hold: -0.188
     # minimum pulse width: -3.000
 
 -----------------------------------------------------------------------
 
-Dados informados contando com o divisor de frequência.
+Dados informados contando com o divisor de frequência e bcd
 
-- Logic Elements: 66
-    # Combinacionais: 34
-    # registradores: 27
-    # Combinacional com registrador: 5
+- Logic Elements: 69
+    # Combinacionais: 37
+    # registradores: 25
+    # Combinacional com registrador: 7
     # LUTs: 
-	- 4 inputs: 6
+	- 4 inputs: 11
 	- 3 inputs: 1
 	- <3 inputs: 32
-	- register: 27
+	- register: 25
 
 - Total Registers: 32
 - Clock Pins: 1
+- LABs used: 16
 
 ## Atraso Clock
 - design-wide TNS: 
-    # setup: -2.933 
-    # hold: -0.685
-    # minimum pulse width: -35.104
+    # setup: -1.373 
+    # hold: -0.889
+    # minimum pulse width: -35.04
 
 - worst-case slack:
-    # setup: -0.723
-    # hold: -0.111
+    # setup: -0.342
+    # hold: -0.197
     # minimum pulse width: -3.000
