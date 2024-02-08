@@ -1,0 +1,134 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 184 304)
+	(text "bcd2" (rect 5 0 33 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "bcd_in[7..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "bcd_in[7..0]" (rect 21 27 87 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "H_out_A" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "H_out_A" (rect 98 27 147 41)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "H_out_B" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "H_out_B" (rect 99 43 147 57)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "H_out_C" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "H_out_C" (rect 99 59 147 73)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "H_out_D" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "H_out_D" (rect 99 75 147 89)(font "Arial" (font_size 8)))
+		(line (pt 168 80)(pt 152 80))
+	)
+	(port
+		(pt 168 96)
+		(output)
+		(text "H_out_E" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "H_out_E" (rect 100 91 147 105)(font "Arial" (font_size 8)))
+		(line (pt 168 96)(pt 152 96))
+	)
+	(port
+		(pt 168 112)
+		(output)
+		(text "H_out_F" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "H_out_F" (rect 100 107 147 121)(font "Arial" (font_size 8)))
+		(line (pt 168 112)(pt 152 112))
+	)
+	(port
+		(pt 168 128)
+		(output)
+		(text "H_out_G" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "H_out_G" (rect 98 123 147 137)(font "Arial" (font_size 8)))
+		(line (pt 168 128)(pt 152 128))
+	)
+	(port
+		(pt 168 144)
+		(output)
+		(text "L_out_A" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "L_out_A" (rect 99 139 147 153)(font "Arial" (font_size 8)))
+		(line (pt 168 144)(pt 152 144))
+	)
+	(port
+		(pt 168 160)
+		(output)
+		(text "L_out_B" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "L_out_B" (rect 100 155 147 169)(font "Arial" (font_size 8)))
+		(line (pt 168 160)(pt 152 160))
+	)
+	(port
+		(pt 168 176)
+		(output)
+		(text "L_out_C" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "L_out_C" (rect 100 171 147 185)(font "Arial" (font_size 8)))
+		(line (pt 168 176)(pt 152 176))
+	)
+	(port
+		(pt 168 192)
+		(output)
+		(text "L_out_D" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "L_out_D" (rect 100 187 147 201)(font "Arial" (font_size 8)))
+		(line (pt 168 192)(pt 152 192))
+	)
+	(port
+		(pt 168 208)
+		(output)
+		(text "L_out_E" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "L_out_E" (rect 101 203 147 217)(font "Arial" (font_size 8)))
+		(line (pt 168 208)(pt 152 208))
+	)
+	(port
+		(pt 168 224)
+		(output)
+		(text "L_out_F" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "L_out_F" (rect 101 219 147 233)(font "Arial" (font_size 8)))
+		(line (pt 168 224)(pt 152 224))
+	)
+	(port
+		(pt 168 240)
+		(output)
+		(text "L_out_G" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "L_out_G" (rect 99 235 147 249)(font "Arial" (font_size 8)))
+		(line (pt 168 240)(pt 152 240))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 272))
+	)
+)

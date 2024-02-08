@@ -1,0 +1,54 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# File: C:\Users\dell\Documents\inf01058-projetos\LAB08\fsm_pins.csv
+# Generated on: Thu Feb 08 16:03:44 2024
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+clk,Input,PIN_G21,6,B6_N1,PIN_G11,,,,,
+HEX2_A,Output,PIN_D15,7,B7_N0,PIN_W1,,,,,
+HEX2_B,Output,PIN_A16,7,B7_N1,PIN_M8,,,,,
+HEX2_C,Output,PIN_B16,7,B7_N1,PIN_W2,,,,,
+HEX2_D,Output,PIN_E15,7,B7_N0,PIN_N8,,,,,
+HEX2_E,Output,PIN_A17,7,B7_N1,PIN_N6,,,,,
+HEX2_F,Output,PIN_B17,7,B7_N1,PIN_N7,,,,,
+HEX2_G,Output,PIN_F14,7,B7_N0,PIN_P5,,,,,
+HEX3_A,Output,PIN_B18,7,B7_N0,PIN_V2,,,,,
+HEX3_B,Output,PIN_F15,7,B7_N0,PIN_R21,,,,,
+HEX3_C,Output,PIN_A19,7,B7_N0,PIN_AB16,,,,,
+HEX3_D,Output,PIN_B19,7,B7_N0,PIN_P3,,,,,
+HEX3_E,Output,PIN_C19,7,B7_N0,PIN_V1,,,,,
+HEX3_F,Output,PIN_D19,7,B7_N0,PIN_M7,,,,,
+HEX3_G,Output,PIN_G15,7,B7_N0,PIN_A15,,,,,
+rst_registers,Input,PIN_H2,1,B1_N1,PIN_G2,,,,,
+saida_amarelo,Output,PIN_B2,1,B1_N0,PIN_U1,,,,,
+saida_verde,Output,PIN_B1,1,B1_N0,PIN_R2,,,,,
+saida_vermelho,Output,PIN_C2,1,B1_N0,PIN_U2,,,,,
+HEX0_A,Unknown,PIN_E11,7,B7_N1,,,,,,
+HEX0_B,Unknown,PIN_F11,7,B7_N1,,,,,,
+HEX0_C,Unknown,PIN_H12,7,B7_N1,,,,,,
+HEX0_D,Unknown,PIN_H13,7,B7_N1,,,,,,
+HEX0_E,Unknown,PIN_G12,7,B7_N1,,,,,,
+HEX0_F,Unknown,PIN_F12,7,B7_N1,,,,,,
+HEX0_G,Unknown,PIN_F13,7,B7_N1,,,,,,
+HEX1_A,Unknown,PIN_A13,7,B7_N1,,,,,,
+HEX1_B,Unknown,PIN_B13,7,B7_N1,,,,,,
+HEX1_C,Unknown,PIN_C13,7,B7_N1,,,,,,
+HEX1_D,Unknown,PIN_A14,7,B7_N1,,,,,,
+HEX1_E,Unknown,PIN_B14,7,B7_N1,,,,,,
+HEX1_F,Unknown,PIN_E14,7,B7_N1,,,,,,
+HEX1_G,Unknown,PIN_A15,7,B7_N1,,,,,,
