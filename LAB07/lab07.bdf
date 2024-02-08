@@ -355,6 +355,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 1040 592 1216 608)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "count[2..0]" (rect 90 0 143 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 368 448 528 544)
 	(text "timer" (rect 5 0 32 14)(font "Arial" (font_size 8)))
@@ -912,6 +928,21 @@ applicable agreement for further details.
 (connector
 	(pt 1024 416)
 	(pt 1040 416)
+)
+(connector
+	(pt 1040 600)
+	(pt 544 600)
+	(bus)
+)
+(connector
+	(pt 544 600)
+	(pt 544 496)
+	(bus)
+)
+(connector
+	(pt 528 496)
+	(pt 544 496)
+	(bus)
 )
 (junction (pt 784 576))
 (junction (pt 1024 416))
