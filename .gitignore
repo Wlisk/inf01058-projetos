@@ -1,0 +1,17 @@
+*db/
+*.qws
+*incremental_db/
+*output_files/
+*simulation/
+*.pin
+*.done
+*.rpt
+*.smsg
+*.summary
+*.sof
+*.jdi
+*.ipinfo
+*test_copy*
+*.xml
+*.bak
+*.ddb

@@ -115,70 +115,6 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
-(pin
-	(output)
-	(rect 840 392 1016 408)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "E_atual1" (rect 90 0 132 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 840 408 1016 424)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "E_atual0" (rect 90 0 132 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 528 456 704 472)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "E_prox1" (rect 90 0 130 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 528 472 704 488)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "E_prox0" (rect 90 0 130 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
 (symbol
 	(rect 752 152 784 168)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
@@ -403,50 +339,8 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 728 400)
-	(pt 296 400)
-)
-(connector
-	(pt 728 400)
-	(pt 728 280)
-)
-(connector
-	(pt 280 416)
-	(pt 744 416)
-)
-(connector
-	(pt 744 416)
-	(pt 744 264)
-)
-(connector
-	(pt 840 400)
-	(pt 808 400)
-)
-(connector
-	(pt 808 264)
-	(pt 808 400)
-)
-(connector
-	(pt 840 416)
-	(pt 792 416)
-)
-(connector
-	(pt 792 280)
-	(pt 792 416)
-)
-(connector
-	(pt 1176 440)
-	(pt 264 440)
-	(bus)
-)
-(connector
 	(pt 984 264)
 	(pt 992 264)
-)
-(connector
-	(pt 1176 192)
-	(pt 1176 440)
-	(bus)
 )
 (connector
 	(pt 992 264)
@@ -459,40 +353,6 @@ applicable agreement for further details.
 (connector
 	(pt 768 192)
 	(pt 768 168)
-)
-(connector
-	(pt 712 264)
-	(pt 744 264)
-)
-(connector
-	(pt 744 264)
-	(pt 808 264)
-)
-(connector
-	(pt 808 264)
-	(pt 824 264)
-)
-(connector
-	(pt 712 280)
-	(pt 728 280)
-)
-(connector
-	(pt 728 280)
-	(pt 792 280)
-)
-(connector
-	(pt 792 280)
-	(pt 824 280)
-)
-(connector
-	(pt 1152 192)
-	(pt 1176 192)
-	(bus)
-)
-(connector
-	(pt 1176 192)
-	(pt 1192 192)
-	(bus)
 )
 (connector
 	(pt 768 192)
@@ -509,65 +369,6 @@ applicable agreement for further details.
 (connector
 	(pt 984 280)
 	(pt 992 280)
-)
-(connector
-	(pt 296 312)
-	(pt 344 312)
-)
-(connector
-	(pt 296 400)
-	(pt 296 312)
-)
-(connector
-	(pt 280 296)
-	(pt 344 296)
-)
-(connector
-	(pt 280 416)
-	(pt 280 296)
-)
-(connector
-	(text "<<__$DEF_ALIAS1330>>" (rect 311 312 434 324)(font "Arial" )(invisible))
-	(pt 264 328)
-	(pt 344 328)
-	(bus)
-)
-(connector
-	(pt 264 440)
-	(pt 264 328)
-	(bus)
-)
-(connector
-	(pt 504 464)
-	(pt 528 464)
-)
-(connector
-	(pt 504 464)
-	(pt 504 296)
-)
-(connector
-	(pt 576 296)
-	(pt 504 296)
-)
-(connector
-	(pt 504 296)
-	(pt 464 296)
-)
-(connector
-	(pt 488 480)
-	(pt 528 480)
-)
-(connector
-	(pt 488 480)
-	(pt 488 312)
-)
-(connector
-	(pt 576 312)
-	(pt 488 312)
-)
-(connector
-	(pt 488 312)
-	(pt 464 312)
 )
 (connector
 	(pt 576 280)
@@ -609,12 +410,95 @@ applicable agreement for further details.
 	(pt 240 264)
 	(pt 576 264)
 )
+(connector
+	(pt 464 296)
+	(pt 576 296)
+)
+(connector
+	(pt 464 312)
+	(pt 576 312)
+)
+(connector
+	(pt 728 376)
+	(pt 296 376)
+)
+(connector
+	(pt 728 280)
+	(pt 728 376)
+)
+(connector
+	(pt 280 392)
+	(pt 744 392)
+)
+(connector
+	(pt 744 264)
+	(pt 744 392)
+)
+(connector
+	(pt 1176 416)
+	(pt 264 416)
+	(bus)
+)
+(connector
+	(pt 1176 192)
+	(pt 1176 416)
+	(bus)
+)
+(connector
+	(pt 344 312)
+	(pt 296 312)
+)
+(connector
+	(pt 296 312)
+	(pt 296 376)
+)
+(connector
+	(pt 344 296)
+	(pt 280 296)
+)
+(connector
+	(pt 280 296)
+	(pt 280 392)
+)
+(connector
+	(text "<<__$DEF_ALIAS1330>>" (rect 311 312 434 324)(font "Arial" )(invisible))
+	(pt 344 328)
+	(pt 264 328)
+	(bus)
+)
+(connector
+	(pt 264 328)
+	(pt 264 416)
+	(bus)
+)
+(connector
+	(pt 712 280)
+	(pt 728 280)
+)
+(connector
+	(pt 728 280)
+	(pt 824 280)
+)
+(connector
+	(pt 712 264)
+	(pt 744 264)
+)
+(connector
+	(pt 744 264)
+	(pt 824 264)
+)
+(connector
+	(pt 1152 192)
+	(pt 1176 192)
+	(bus)
+)
+(connector
+	(pt 1176 192)
+	(pt 1192 192)
+	(bus)
+)
 (junction (pt 728 280))
 (junction (pt 744 264))
-(junction (pt 808 264))
-(junction (pt 792 280))
 (junction (pt 1176 192))
-(junction (pt 504 296))
-(junction (pt 488 312))
 (junction (pt 504 208))
 (junction (pt 240 264))
