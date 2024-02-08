@@ -73,6 +73,7 @@ set_global_assignment -name BDF_FILE ../contador/mux2x1.bdf
 set_global_assignment -name BDF_FILE ../contador/block.bdf
 set_global_assignment -name BDF_FILE ../contador/bblock.bdf
 set_global_assignment -name BDF_FILE test_fsm.bdf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/dell/Documents/inf01058-projetos/LAB08/tests/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_semaforo.vwf

@@ -241,13 +241,6 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
-		(pt 0 48)
-		(input)
-		(text "S0" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "S0" (rect 21 43 36 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
 		(pt 128 32)
 		(output)
 		(text "led_verde" (rect 0 0 56 14)(font "Arial" (font_size 8)))
@@ -319,15 +312,7 @@ applicable agreement for further details.
 	(pt 752 248)
 )
 (connector
-	(pt 528 360)
-	(pt 448 360)
-)
-(connector
 	(pt 448 264)
-	(pt 448 360)
-)
-(connector
-	(pt 448 360)
 	(pt 448 456)
 )
 (junction (pt 424 248))
@@ -335,4 +320,3 @@ applicable agreement for further details.
 (junction (pt 424 344))
 (junction (pt 448 456))
 (junction (pt 448 264))
-(junction (pt 448 360))

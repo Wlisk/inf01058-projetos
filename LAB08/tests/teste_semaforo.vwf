@@ -197,7 +197,8 @@ TRANSITION_LIST("rst_registers")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 950.0;
+		LEVEL 0 FOR 50.0;
 	}
 }
 
